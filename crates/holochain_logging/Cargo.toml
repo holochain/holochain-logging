@@ -5,9 +5,9 @@ authors = ["Holochain Core Dev Team <devcore@holochain.org>"]
 edition = "2018"
 description = "A logger for Holochain"
 keywords = ["holochain", "holo", "p2p", "logging"]
-categories = ["logging"]
+categories = ["development-tools"]
 license = "Apache-2.0"
-readme = "README.md"
+readme = "../../README.md"
 documentation = "https://github.com/holochain/holochain-logging"
 repository = "https://github.com/holochain/holochain-logging"
 
