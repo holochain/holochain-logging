@@ -1,5 +1,5 @@
 let
- release-commit = "178c0e016fd9163141795abe5ff00bf2e70c5415";
+ release-commit = "0d69854e9a4a13e407fa1930460e9d1055068d7a";
  current = "0.0.2";
  previous = "0.0.1";
 
