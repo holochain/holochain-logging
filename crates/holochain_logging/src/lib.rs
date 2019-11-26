@@ -692,7 +692,7 @@ impl LogMessageTrait for LogMessage {
         let tag_name = self
             .target
             .to_owned()
-            .unwrap_or_else(|| format!("{}{}", &self.thread_name, &self.module).to_owned());
+            .unwrap_or_else(|| format!("{}{}", &self.thread_name, &self.module));
         let base_color_on = &tag_name.to_owned();
         let pseudo_rng_color = pick_color(&base_color_on);
 
@@ -715,7 +715,7 @@ impl LogMessageTrait for LogMessage {
             _ => msg_color,
         };
 
-        let msg = format!(
+        format!(
             "{level} {timestamp} [{tag}] {thread_name} {line} {args}",
             args = self.args.color(msg_color),
             tag = tag_name.bold().color(pseudo_rng_color),
@@ -725,8 +725,7 @@ impl LogMessageTrait for LogMessage {
             timestamp = chrono::Local::now().format(&self.timestamp_format),
             level = self.level_to_print.bold(),
             thread_name = self.thread_name.underline(),
-        );
-        msg.to_string()
+        )
     }
 
     /// Tells the logging thread to gracefully shutdown.
