@@ -1,6 +1,6 @@
 let
- release-commit = "3e702e489b3424d0bc9aa4d288fe5556b3ab9c8c";
- current = "0.0.5";
+ release-commit = "dd810da0809c947545f23034b8d931d56581f6bf";
+ current = "0.0.6";
  previous = "_._._";
 
  # tag will ultimately be current version when it hits holonix
