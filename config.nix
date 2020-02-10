@@ -7,8 +7,8 @@ let
  # https://github.com/holochain/holonix/blob/master/release/default.nix#L7
  tag = "v${current}";
 
- holonix-version = "v0.0.37";
- holonix-sha256 = "1dhv61x6lvpxvrs6ij44piqswb62hgn0q9fdxv7fnhc1a9grqcr3";
+ holonix-version = "v0.0.65";
+ holonix-sha256 = "1frw8z1d3qdly2lcs7z4liwkkqgb344h7p7n1xzpwaqhhm0xa0kd";
 in
 rec {
 
