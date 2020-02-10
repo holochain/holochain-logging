@@ -64,7 +64,6 @@ hl-release-hook-version
 
    # publish artifacts to the world
    publish = ''
-hl-release-hook-publish
 '';
   };
 
