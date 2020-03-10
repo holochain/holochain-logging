@@ -1,14 +1,14 @@
 let
- release-commit = "178c0e016fd9163141795abe5ff00bf2e70c5415";
- current = "0.0.4";
- previous = "0.0.3";
+ release-commit = "33bca0fe47fac18d156968cb1432844c1af3663c";
+ current = "0.0.7";
+ previous = "_._._";
 
  # tag will ultimately be current version when it hits holonix
  # https://github.com/holochain/holonix/blob/master/release/default.nix#L7
  tag = "v${current}";
 
- holonix-version = "v0.0.37";
- holonix-sha256 = "1dhv61x6lvpxvrs6ij44piqswb62hgn0q9fdxv7fnhc1a9grqcr3";
+ holonix-version = "v0.0.65";
+ holonix-sha256 = "1frw8z1d3qdly2lcs7z4liwkkqgb344h7p7n1xzpwaqhhm0xa0kd";
 in
 rec {
 
@@ -64,7 +64,6 @@ hl-release-hook-version
 
    # publish artifacts to the world
    publish = ''
-hl-release-hook-publish
 '';
   };
 
